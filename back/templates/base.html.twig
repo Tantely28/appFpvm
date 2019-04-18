@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="http://localhost/projet/bootswatch/bootstrap.min.css">-->
+        {% block stylesheets %}{% endblock %}
+        <style>
+            .croix{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+    {% if not app.user %}
+        <script>window.location.href = "/login"</script>
+    {% else %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"><b class="croix">&#8224;</b>&nbsp;Fpvm vatolampy famonjena</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Vaovao <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Adidy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Toriteny</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fijoroana vavolombelona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mpikambana</a>
+                </li>
+            </ul>
+            <form action="{{ path('logout') }}" class="form-inline my-2 my-lg-0">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Deconnecter</button>
+            </form>
+        </div>
+    </nav>
+
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+    {% endif %}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
