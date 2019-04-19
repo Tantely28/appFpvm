@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 18 avr. 2019 à 23:16
+-- Généré le :  ven. 19 avr. 2019 à 15:10
 -- Version du serveur :  10.1.38-MariaDB
 -- Version de PHP :  7.3.2
 
@@ -68,7 +68,8 @@ CREATE TABLE `mpiangona` (
   `tel` int(15) DEFAULT NULL,
   `adresy` varchar(255) DEFAULT NULL,
   `login` varchar(255) NOT NULL,
-  `mdp` varchar(255) NOT NULL
+  `mdp` varchar(255) NOT NULL,
+  `mpandray` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
