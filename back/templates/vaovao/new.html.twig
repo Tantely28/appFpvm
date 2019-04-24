@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hapiditra Vaovao{% endblock %}
+
+{% block body %}
+    <h1>Vaovao</h1>
+
+    {{ include('vaovao/_form.html.twig') }}
+
+    <a href="{{ path('vaovao_index') }}">Iverina</a>
+{% endblock %}
