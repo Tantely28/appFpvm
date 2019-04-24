@@ -57,6 +57,13 @@ class Mpiangona
     private $mdp;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="mpandray", type="string", length=10, nullable=false)
+     */
+    private $mpandray;
+
+    /**
      * @var \Sampana
      *
      * @ORM\ManyToOne(targetEntity="Sampana")
@@ -127,6 +134,18 @@ class Mpiangona
     public function setMdp(string $mdp): self
     {
         $this->mdp = $mdp;
+
+        return $this;
+    }
+
+    public function getMpandray(): ?string
+    {
+        return $this->mpandray;
+    }
+
+    public function setMpandray(string $mpandray): self
+    {
+        $this->mpandray = $mpandray;
 
         return $this;
     }

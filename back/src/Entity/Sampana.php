@@ -45,5 +45,9 @@ class Sampana
         return $this;
     }
 
+    public function __toString()
+    {
+        return $this->anarana;
+    }
 
 }

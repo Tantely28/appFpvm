@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fpvm!{% endblock %}
+
+{% block body %}
+   <br> <h2><b>Mpiangona vaovao</b></h2><br>
+    {{ form_start(form) }}
+    {{ form_row(form.anaarana) }}
+    {{ form_row(form.idSampana) }}
+    {{ form_row(form.tel) }}
+    {{ form_row(form.adresy) }}
+    {{ form_row(form.login) }}
+    {{ form_row(form.mdp) }}
+    {{ form_row(form.mpandray) }}
+    <input type="submit" value="Ajouter" class="btn btn-success">
+    {{ form_end(form) }}
+{% endblock %}
