@@ -15,7 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class VaovaoController extends AbstractController
 {
     /**
-     * @Route("/", name="vaovao_index", methods={"GET"})
+     * @Route("/vaovao", name="vaovao_index", methods={"GET"})
      */
     public function index(): Response
     {
@@ -29,7 +29,7 @@ class VaovaoController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="vaovao_new", methods={"GET","POST"})
+     * @Route("/create/vaovao", name="vaovao_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -52,7 +52,7 @@ class VaovaoController extends AbstractController
     }
 
     /**
-     * @Route("/{idVaovao}", name="vaovao_show", methods={"GET"})
+     * @Route("/show/{idVaovao}", name="vaovao_show", methods={"GET"})
      */
     public function show(Vaovao $vaovao): Response
     {
@@ -62,7 +62,7 @@ class VaovaoController extends AbstractController
     }
 
     /**
-     * @Route("/{idVaovao}/edit", name="vaovao_edit", methods={"GET","POST"})
+     * @Route("/edit/{idVaovao}", name="vaovao_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Vaovao $vaovao): Response
     {
@@ -84,7 +84,7 @@ class VaovaoController extends AbstractController
     }
 
     /**
-     * @Route("/{idVaovao}", name="vaovao_delete", methods={"DELETE"})
+     * @Route("/remove/{idVaovao}", name="vaovao_delete", methods={"DELETE"})
      */
     public function delete(Request $request, Vaovao $vaovao): Response
     {

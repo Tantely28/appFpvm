@@ -22,9 +22,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('vaovao_index') }}">Iverina</a>
+    <a class="btn btn-secondary" href="{{ path('vaovao_index') }}">Iverina</a> <br>
 
-    <a href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
+    <a class="btn btn-warning" href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
 
     {{ include('vaovao/_delete_form.html.twig') }}
 {% endblock %}

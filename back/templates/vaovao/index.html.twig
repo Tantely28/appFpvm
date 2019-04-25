@@ -21,17 +21,17 @@
                 <td>{{ vaovao.titre }}</td>
                 <td>{{ vaovao.contenu }}</td>
                 <td>
-                    <a href="{{ path('vaovao_show', {'idVaovao': vaovao.idVaovao}) }}">Ijery</a>
-                    <a href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
+                    <a class="btn btn-info" href="{{ path('vaovao_show', {'idVaovao': vaovao.idVaovao}) }}">Ijery</a>
+                    <a class="btn btn-warning" href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">Mbola tsisy vaovao</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('vaovao_new') }}">Vaovao</a>
+    <a class="btn btn-success" href="{{ path('vaovao_new') }}">Vaovao</a>
 {% endblock %}

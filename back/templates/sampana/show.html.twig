@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sampana{% endblock %}
+
+{% block body %}
+    <h1>Sampana</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th></th>
+                <td>{{ sampana.idSampana }}</td>
+            </tr>
+            <tr>
+                <th>Anarana</th>
+                <td>{{ sampana.anarana }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a  class="btn btn-secodary" href="{{ path('sampana_index') }}">Iverina</a>
+
+    <a  class="btn btn-warning" href="{{ path('sampana_edit', {'idSampana': sampana.idSampana}) }}">Anova</a>
+
+    {{ include('sampana/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Sampana{% endblock %}
+
+{% block body %}
+    <h1>Anova Sampana</h1>
+
+    {{ include('sampana/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a  class="btn btn-secondary" href="{{ path('sampana_index') }}">Iverina</a>
+
+    {{ include('sampana/_delete_form.html.twig') }}
+{% endblock %}
