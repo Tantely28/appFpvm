@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Sampana{% endblock %}
+
+{% block body %}
+    <h1>Sampana Vaovao</h1>
+
+    {{ include('sampana/_form.html.twig') }}
+
+    <a  class="btn btn-secondary" href="{{ path('sampana_index') }}">Iverina</a>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vaovao{% endblock %}
+
+{% block body %}
+    <h1>Ijery Vaovao</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Laharana</th>
+                <td>{{ vaovao.idVaovao }}</td>
+            </tr>
+            <tr>
+                <th>Lohateny</th>
+                <td>{{ vaovao.titre }}</td>
+            </tr>
+            <tr>
+                <th>Votohatiny</th>
+                <td>{{ vaovao.contenu }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-secondary" href="{{ path('vaovao_index') }}">Iverina</a> <br>
+
+    <a class="btn btn-warning" href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
+
+    {{ include('vaovao/_delete_form.html.twig') }}
+{% endblock %}

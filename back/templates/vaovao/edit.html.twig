@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fanovana Vaovao{% endblock %}
+
+{% block body %}
+    <h1>Fanovana Vaovao</h1>
+
+    {{ include('vaovao/_form.html.twig', {'button_label': 'Hovana'}) }}
+
+    <a class="btn btn-secondary" href="{{ path('vaovao_index') }}">Iverina</a>
+
+    {{ include('vaovao/_delete_form.html.twig') }}
+{% endblock %}
