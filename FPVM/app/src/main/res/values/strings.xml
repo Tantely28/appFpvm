@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FPVM</string>
+    <string name="login">Se connecter</string>
+    <string name="register">Enregistrer</string>
+    <string name="email">EMAIL</string>
+    <string name="nom">Nom</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="password">Password</string>
+    <string name="btn_send">Enregistrer</string>
+    <string name="password2">Confirmer votre mdp</string>
+    <string name="btn_login">Connexion</string>
+</resources>

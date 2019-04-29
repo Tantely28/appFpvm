@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/MpiangonaRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SampanaRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mpiangona/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mpiangona/read.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Sampana.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sampana.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mobile/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/java/com/example/tombo/fpvm/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/java/com/example/tombo/fpvm/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobile/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobile/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/SampanaRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="340">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#117#140#0#PHP" expanded="true" />
@@ -65,13 +60,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MpiangonaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="67" selection-end-column="17" />
+            <state relative-caret-position="409">
+              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
               <folding>
                 <element signature="e#34#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+              <folding>
+                <element signature="e#120#159#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Sampana.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="833">
               <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
             </state>
           </provider>
@@ -121,12 +128,12 @@
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/api/ApiController.php" />
         <option value="$PROJECT_DIR$/src/Repository/MpiangonaRepository.php" />
-        <option value="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" />
         <option value="$PROJECT_DIR$/templates/mpiangona/create.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/SampanaRepository.php" />
         <option value="$PROJECT_DIR$/src/Entity/Mpiangona.php" />
         <option value="$PROJECT_DIR$/src/Entity/Sampana.php" />
         <option value="$PROJECT_DIR$/src/Controller/MpiangonaController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" />
       </list>
     </option>
   </component>
@@ -257,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +287,13 @@
               <item name="back" type="b2602c69:ProjectViewProjectNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,7 +306,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,16 +368,21 @@
       <workItem from="1555997651367" duration="7478000" />
       <workItem from="1556012703282" duration="4581000" />
       <workItem from="1556041946911" duration="4081000" />
+      <workItem from="1556194114007" duration="94000" />
+      <workItem from="1556261854801" duration="778000" />
+      <workItem from="1556264464067" duration="1174000" />
+      <workItem from="1556432502402" duration="5874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116052000" />
+    <option name="totallyTimeSpent" value="123972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17473525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,7 +395,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32850242" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.29146537" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.26409018" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.29146537" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -580,16 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="e#120#159#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mpiangona/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -604,9 +613,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/SampanaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#117#140#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Sampana.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="833">
           <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
         </state>
       </provider>
@@ -621,22 +640,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/SampanaRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/MpiangonaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="409">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
           <folding>
-            <element signature="e#117#140#0#PHP" expanded="true" />
+            <element signature="e#34#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MpiangonaController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
           <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
+            <element signature="e#120#159#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

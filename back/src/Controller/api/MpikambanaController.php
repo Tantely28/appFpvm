@@ -9,6 +9,7 @@
 namespace App\Controller\api;
 
 use App\Repository\MpiangonaRepository;
+use PhpParser\Node\Scalar\String_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -35,17 +36,18 @@ class MpikambanaController extends AbstractController
      */
     public function login(Request $request)
     {
-        $mpiangona=$this->mpiangonaRepository->findAll();
-
         if(!empty($request->get('login')) && !empty($request->get('mdp')))
         {
             $mpiangona=$this->mpiangonaRepository->login($request->get('login'),$request->get('mdp'));
 
             if(sizeof($mpiangona)==1) {
                 $formatted = [];
+                $error=['error'=>false];
+
                 foreach ($mpiangona as $posts) {
-                    $formatted[] = [
-                        'id'=>$posts->getIdMpiangona(),
+                    $formatted= [
+                        'error'=>false,
+                        'id'=>(String)$posts->getIdMpiangona(),
                         'anarana'=>$posts->getAnaarana(),
                         'telephone'=>$posts->getTel(),
                         'adresy'=>$posts->getAdresy(),
@@ -57,10 +59,10 @@ class MpikambanaController extends AbstractController
 
                 return new JsonResponse($formatted);
             }else{
-                return new JsonResponse(['message'=>'Anarana na tenimihafina diso'],Response::HTTP_OK);
+                return new JsonResponse(['message'=>'Anarana na tenimihafina diso','error'=>true],Response::HTTP_OK);
             }
         }else{
-            return new JsonResponse(['message' => 'Ampidiro tompko ny anaranao sy ny tenimihafinanao'], Response::HTTP_OK);
+            return new JsonResponse(['message' => 'Ampidiro tompko ny anaranao sy ny tenimihafinanao','error'=>true], Response::HTTP_OK);
         }
     }
 }
