@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_frag_vaovao"
+            android:icon="@drawable/accueil"
+            android:title="Vaovao" />
+        <item
+            android:id="@+id/nav_frag_adidy"
+            android:icon="@drawable/money"
+            android:title="Adidy" />
+        <item
+            android:id="@+id/nav_frag_toriteny"
+            android:icon="@drawable/labible"
+            android:title="Toriteny" />
+        <item
+            android:id="@+id/nav_frag_fijoroana"
+            android:icon="@drawable/citation"
+            android:title="Fijoroana" />
+
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_frag_user"
+                android:icon="@drawable/user"
+                android:title="Profil User" />
+            <item
+                android:id="@+id/nav_frag_logout"
+                android:icon="@drawable/logout"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

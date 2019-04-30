@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         sessionManager=new SessionManager(this);
 
         if(sessionManager.isLogged()){
-            Intent i=new Intent(this,MpiangonaActivity.class);
+            Intent i=new Intent(this,NavigationActivity.class);
             startActivity(i);
             finish();
         }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onSuccess(String id, String pseudo) {
                                     pg_bar.setVisibility(View.GONE);
                                     sessionManager.insertUser(id,pseudo);
-                                    Intent i=new Intent(getApplicationContext(),MpiangonaActivity.class);
+                                    Intent i=new Intent(getApplicationContext(),NavigationActivity.class);
                                     startActivity(i);
                                     finish();
                                 }
