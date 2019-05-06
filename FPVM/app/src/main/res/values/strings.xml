@@ -9,6 +9,10 @@
     <string name="btn_send">Enregistrer</string>
     <string name="password2">Confirmer votre mdp</string>
     <string name="btn_login">Connexion</string>
+
+    <string name="text_one">Ary ny masoko sy ny foko no ao mandrakariva</string>
+    <string name="text_two">II Tantara 7:16</string>
+
     <string name="title_activity_navigation">NavigationActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
