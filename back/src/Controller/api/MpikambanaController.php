@@ -9,6 +9,7 @@
 namespace App\Controller\api;
 
 use App\Repository\MpiangonaRepository;
+use App\Repository\VaovaoRepository;
 use PhpParser\Node\Scalar\String_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -25,10 +26,15 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 class MpikambanaController extends AbstractController
 {
     private $mpiangonaRepository;
+    /**
+     * @var VaovaoRepository
+     */
+    private $vaovaoRepository;
 
-    public function __construct(MpiangonaRepository $mpiangonaRepository)
+    public function __construct(MpiangonaRepository $mpiangonaRepository, VaovaoRepository $vaovaoRepository)
     {
         $this->mpiangonaRepository=$mpiangonaRepository;
+        $this->vaovaoRepository = $vaovaoRepository;
     }
 
     /**
@@ -64,5 +70,25 @@ class MpikambanaController extends AbstractController
         }else{
             return new JsonResponse(['message' => 'Ampidiro tompko ny anaranao sy ny tenimihafinanao','error'=>true], Response::HTTP_OK);
         }
+    }
+
+    /**
+     * @Rest\Get("/read/vaovao")
+     */
+    public function Vaovao()
+    {
+        $vaovao=$this->vaovaoRepository->findVaovao();
+
+        $formatted = [];
+        foreach ($vaovao as $vao) {
+            $formatted[]= [
+                'id'=>$vao->getIdVaovao(),
+                'titre'=>$vao->getTitre(),
+                'contenu'=>$vao->getContenu(),
+            ];
+        }
+
+        return new JsonResponse($formatted);
+
     }
 }
