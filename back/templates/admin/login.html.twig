@@ -17,6 +17,7 @@
         color:white;
         margin-top: 100px;
         font-family: "Arial Black";
+        text-decoration: underline;
     }
     center p{
         text-align: center;
@@ -36,8 +37,15 @@
     table {
         width: 100%;
         color: #000000;
+        text-align: center;
     }
-
+    h4{
+        margin-top: 10px;
+        text-align: center;
+        color:#000000;
+        font-family: "Arial Black";
+        text-decoration: underline;
+    }
     input {
         width: 100%;
         height: 40px;
@@ -63,14 +71,15 @@
         <p>Admin invalid</p>
     {% endif %}
     <form action="" method="post">
+        <h4>FIDIRANA</h4>
         <table>
             <tr>
                 <td><label for="username">Solonanarana:</label></td>
-                <td><input type="text" name="_username" value="{{ last_username }}" placeholder="Solonanarana..."></td>
+                <td><input type="text" name="_username" value="{{ last_username }}" placeholder="Solona..."></td>
             </tr><br>
             <tr>
                 <td><label for="password">Tenimiafina:</label></td>
-                <td><input type="password" name="_password" placeholder="Tenimiafina..."></td>
+                <td><input type="password" name="_password" placeholder="Tenimi..."></td>
             </tr>
             <tr>
                 <td><input class="btn btn-info" type="submit" value="Hiditra" style="text-align: center"></td>
