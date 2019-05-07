@@ -8,10 +8,52 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
     <title>login</title>
 </head>
+<style>
+    body{
+        background-color: #9b5cc7;
+    }
+    center h3{
+        text-align: center;
+        color:white;
+        margin-top: 100px;
+        font-family: "Arial Black";
+    }
+    center p{
+        text-align: center;
+        color:white;
+        font-family: "Arial";
+    }
+    form {
+        margin:0 auto;
+        width: 20%;
+        background-color:white;
+        padding: 0px 30px 50px 30px;
+        margin-top: 20px;
+        text-align: center;
+        color: #000000;
+    }
+    table {
+        width: 100%;
+        color: #000000;
+    }
 
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        color: #000000;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000000;
+        margin-bottom: 20px;
+    }
+
+</style>
 <body>
 <center>
- <h3><b>Admin</b></h3>
+ <h3><b>MPANDRINDRA</b></h3>
+ <p>Tongasoa Indray!</p>
     {% if app.user %}
     <script>window.location.href = "/"</script>
     {% endif %}
@@ -22,13 +64,15 @@
     <form action="" method="post">
         <table>
             <tr>
-                <td><label for="username">Username</label></td><td><input type="text" name="_username" value="{{ last_username }}"></td>
+                <td><label for="username">Solonanarana:</label></td>
+                <td><input type="text" name="_username" value="{{ last_username }}" placeholder="Solonanarana..."></td>
+            </tr><br>
+            <tr>
+                <td><label for="password">Tenimiafina:</label></td>
+                <td><input type="password" name="_password" placeholder="Tenimiafina..."></td>
             </tr>
             <tr>
-                <td><label for="password">Password</label></td><td><input type="password" name="_password"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Log in"></td>
+                <td><input class="btn btn-info" type="submit" value="Hiditra" style="text-align: center"></td>
             </tr>
         </table>
     </form>
