@@ -5,4 +5,7 @@
     <color name="colorAccent">#db97e5</color>
     <color name="colorText">#ffffff</color>
     <color name="colorTextbtn">#60026d</color>
+
+    <color name="colorTextTitle">#ef9fff</color>
+    <color name="colorTextNews">#3d3d3d</color>
 </resources>
