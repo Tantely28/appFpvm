@@ -1,11 +1,13 @@
 package com.fpvm.app.fpvm;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +17,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.fpvm.app.fpvm.listView.Adapter;
+import com.fpvm.app.fpvm.listView.AppController;
+import com.fpvm.app.fpvm.listView.Item;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NavigationActivity extends AppCompatActivity
         implements
@@ -24,22 +44,22 @@ public class NavigationActivity extends AppCompatActivity
 
     private SessionManager sessionManager;
 
+    private static final String url="http://192.168.43.102:8000/api/read/vaovao";
+    //http://192.168.88.234:8000/api/read/vaovao
+    private ProgressDialog dialog;
+    private List<Item> array= new ArrayList<Item>();
+    private ListView listView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -50,10 +70,61 @@ public class NavigationActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        this.openFragement(new VaovaoFragment());
 
+
+        //this.openFragement(new VaovaoFragment());
+
+        //Session manager
         sessionManager=new SessionManager(this);
         sessionManager.getPseudo();
+
+        //Method ListVaovao
+        final Adapter adapter;
+
+        listView = (ListView)findViewById(R.id.list_item);
+        adapter = new Adapter(this,array);
+        listView.setAdapter(adapter);
+
+        dialog=new ProgressDialog(this);
+        dialog.setMessage("Loading...");
+        dialog.show();
+
+
+        //Create volley request obj
+        JsonArrayRequest jsonArrayRequest= new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+
+                hideDialog();
+
+                //parsing json
+                for(int i=0;i<response.length();i++){
+                    try {
+                        JSONObject obj=response.getJSONObject(i);
+                        Item item=new Item();
+
+                        item.setTitle(obj.getString("titre"));
+                        item.setNews(obj.getString("contenu"));
+
+                        //add to array
+                        array.add(item);
+
+                    } catch (JSONException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                adapter.notifyDataSetChanged();
+
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        AppController.getInstance().addToRequestQueue(jsonArrayRequest);
+
     }
 
     @Override
@@ -97,13 +168,13 @@ public class NavigationActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        Fragment fragment = null;
+        //Fragment fragment = null;
 
         if (id == R.id.nav_frag_vaovao) {
             // Handle the camera action
-            fragment = new VaovaoFragment();
+            //fragment = new VaovaoFragment();
         } else if (id == R.id.nav_frag_adidy) {
-            fragment = new AdidyFragment();
+            //fragment = new AdidyFragment();
 
         } else if (id == R.id.nav_frag_toriteny) {
 
@@ -118,7 +189,7 @@ public class NavigationActivity extends AppCompatActivity
             finish();
 
         }
-        this.openFragement(fragment);
+        //this.openFragement(fragment);
 
 
 
@@ -133,11 +204,18 @@ public class NavigationActivity extends AppCompatActivity
     }
 
     //ouverture d'un fragment
-    private void openFragement(Fragment fragment){
+    /*private void openFragement(Fragment fragment){
         if (fragment != null){
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.mainFrame, fragment);
             ft.commit();
+        }
+    }*/
+
+    public void hideDialog(){
+        if(dialog !=null){
+            dialog.dismiss();
+            dialog=null;
         }
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <!-- title -->
-
+    <!--- title -->
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
@@ -16,7 +16,6 @@
         android:textColor="@color/colorTextTitle"/>
 
     <!-- news -->
-
     <TextView
         android:id="@+id/tv_news"
         android:layout_width="fill_parent"
@@ -25,6 +24,7 @@
         android:layout_marginTop="5dp"
         android:textSize="17dp"
         android:text="testNews"
-        android:textColor="@color/colorTextNews"/>
+        android:textColor="@color/colorText"/>
+
 
 </RelativeLayout>
