@@ -44,7 +44,7 @@ public class NavigationActivity extends AppCompatActivity
 
     private SessionManager sessionManager;
 
-    private static final String url="http://192.168.43.102:8000/api/read/vaovao";
+    private static final String url="http://192.168.88.193:8000/api/read/vaovao";
     //http://192.168.88.234:8000/api/read/vaovao
     private ProgressDialog dialog;
     private List<Item> array= new ArrayList<Item>();
