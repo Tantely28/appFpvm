@@ -3,12 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
         <!--<link rel="stylesheet" href="http://localhost/projet/bootswatch/bootstrap.min.css">-->
         {% block stylesheets %}{% endblock %}
         <style>
             .croix{
                 font-size: 25px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                font-size: 17px;
+                color:#710193;
+                background: white;
+                border-radius: 10px;
+                border: 2px solid #710193;
+                font-family: "Arial Black";
+                font-weight: bold;
+            }
+            button:hover{
+                background:#710193;
+                color: white;
+                text-decoration:none;
+                font-weight: bold;
             }
         </style>
     </head>
@@ -16,38 +33,35 @@
     {% if not app.user %}
         <script>window.location.href = "/login"</script>
     {% else %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><b class="croix">&#8224;</b>&nbsp;Fpvm vatolampy famonjena</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#"><b class="croix">&#8224;</b>&nbsp;Fpvm vatolampy famonjena</a>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('vaovao_index') }}">Vaovao</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('sampana_index') }}">Sampana</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Adidy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Toriteny</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fijoroana vavolombelona</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('read_mpiangona') }}">Mpiangona</a>
-                </li>
-            </ul>
-            <form action="{{ path('logout') }}" class="form-inline my-2 my-lg-0">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Deconnecter</button>
-            </form>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('vaovao_index') }}">Vaovao</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('sampana_index') }}">Sampana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adidy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Toriteny</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fijoroana vavolombelona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('read_mpiangona') }}">Mpiangona</a>
+                    </li>
+                </ul>
+                <form  action="{{ path('logout') }}" class="form-inline my-2 my-lg-0">
+                    <button type="submit">Hiala</button>
+                </form>
+            </div>
+        </nav>
 
             <div class="container">
                 {% block body %}{% endblock %}

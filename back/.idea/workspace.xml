@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mpiangona/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mpiangona/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mpiangona/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mpiangona/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mpiangona/read.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mpiangona/read.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampana/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampana/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampana/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampana/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampana/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampana/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampana/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampana/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampana/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampana/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,49 +46,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/AdminRepository.php">
+        <entry file="file://$PROJECT_DIR$/templates/sampana/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding>
-                <element signature="e#34#55#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="561">
+              <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/vaovao/edit.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/mpiangona/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mpiangona/read.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/admin/login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/admin/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="136">
+              <caret line="8" column="97" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -90,7 +103,6 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/templates/admin/home.html.twig" />
         <option value="$PROJECT_DIR$/templates/recrutment/create.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
         <option value="$PROJECT_DIR$/templates/recrutment/update.html.twig" />
@@ -107,8 +119,6 @@
         <option value="$PROJECT_DIR$/src/Controller/EquipeController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Entity/Admin.php" />
-        <option value="$PROJECT_DIR$/templates/mpiangona/read.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/api/ApiController.php" />
         <option value="$PROJECT_DIR$/src/Repository/MpiangonaRepository.php" />
         <option value="$PROJECT_DIR$/templates/mpiangona/create.html.twig" />
@@ -118,7 +128,22 @@
         <option value="$PROJECT_DIR$/src/Controller/MpiangonaController.php" />
         <option value="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" />
         <option value="$PROJECT_DIR$/src/Repository/VaovaoRepository.php" />
+        <option value="$PROJECT_DIR$/templates/vaovao/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/vaovao/edit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/vaovao/new.html.twig" />
+        <option value="$PROJECT_DIR$/templates/vaovao/_delete_form.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Vaovao.php" />
+        <option value="$PROJECT_DIR$/templates/vaovao/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/sampana/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/sampana/new.html.twig" />
+        <option value="$PROJECT_DIR$/templates/sampana/edit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/sampana/_delete_form.html.twig" />
+        <option value="$PROJECT_DIR$/templates/sampana/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/mpiangona/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/mpiangona/read.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/login.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/home.html.twig" />
       </list>
     </option>
   </component>
@@ -236,10 +261,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="698" />
+    <option name="width" value="683" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -249,7 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,6 +283,19 @@
               <item name="back" type="b2602c69:ProjectViewProjectNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="back" type="b2602c69:ProjectViewProjectNode" />
@@ -289,6 +324,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,18 +395,23 @@
       <workItem from="1556735490298" duration="8000" />
       <workItem from="1556803863381" duration="568000" />
       <workItem from="1557140604415" duration="1792000" />
-      <workItem from="1557209517650" duration="9277000" />
+      <workItem from="1557209517650" duration="10324000" />
+      <workItem from="1557316459170" duration="144000" />
+      <workItem from="1557418578636" duration="3201000" />
+      <workItem from="1557465022104" duration="8386000" />
+      <workItem from="1557479678873" duration="5496000" />
+      <workItem from="1557487872975" duration="623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135617000" />
+    <option name="totallyTimeSpent" value="154688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -390,76 +431,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/validator.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recrutment/update.html.twig" />
-    <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2788">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle/Controller/Annotations/Copy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Visitor.php" />
-    <entry file="file://$PROJECT_DIR$/src/Entity/Recrutment.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/Uploadable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Mapping/Annotation/UploadableField.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -535,20 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mpiangona/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mpiangona/read.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-933">
@@ -607,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Vaovao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -636,7 +591,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/AdminRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="323">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
@@ -644,31 +599,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/vaovao/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Vaovao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="-265">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/home.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Controller/VaovaoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="1445">
+          <caret line="90" column="92" lean-forward="true" selection-start-line="90" selection-start-column="92" selection-end-line="90" selection-end-column="92" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="-248">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="97" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mpiangona/read.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mpiangona/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sampana/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vaovao/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
         </state>
       </provider>
     </entry>
