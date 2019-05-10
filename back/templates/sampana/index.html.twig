@@ -3,11 +3,11 @@
 {% block title %}Sampana{% endblock %}
 
 {% block body %}
-    <h1>Sampana</h1>
+    <h1 style="text-align: center; text-decoration: underline; font-weight: bold; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Sampana</h1>
 
-    <table class="table">
+    <table class="table" style="font-family: Arial; text-align: center; border: 2px solid #000000;">
         <thead>
-            <tr>
+            <tr style="font-size:20px;">
                 <th></th>
                 <th>Anarana</th>
                 <th></th>
@@ -19,8 +19,8 @@
                 <td>{{ sampana.idSampana }}</td>
                 <td>{{ sampana.anarana }}</td>
                 <td>
-                    <a  class="btn btn-info" href="{{ path('sampana_show', {'idSampana': sampana.idSampana}) }}">Ijery</a>
-                    <a  class="btn btn-warning" href="{{ path('sampana_edit', {'idSampana': sampana.idSampana}) }}">Anova</a>
+                    <a  class="btn btn-outline-info" href="{{ path('sampana_show', {'idSampana': sampana.idSampana}) }}">Ijery</a>
+                    <a  class="btn btn-outline-warning" href="{{ path('sampana_edit', {'idSampana': sampana.idSampana}) }}">Anova</a>
                 </td>
             </tr>
         {% else %}
@@ -31,5 +31,5 @@
         </tbody>
     </table>
 
-    <a  class="btn btn-success" href="{{ path('sampana_new') }}">Sampana Vaovao</a>
+    <a  class="btn btn-primary" href="{{ path('sampana_new') }}">Apiditra Sampana Vaovao</a>
 {% endblock %}
