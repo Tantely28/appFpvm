@@ -16,11 +16,11 @@
         <tbody>
         {% for sampana in sampanas %}
             <tr>
-                <td>{{ sampana.idSampana }}</td>
+                <td>{{ sampana.id }}</td>
                 <td>{{ sampana.anarana }}</td>
                 <td>
-                    <a  class="btn btn-outline-info" href="{{ path('sampana_show', {'idSampana': sampana.idSampana}) }}">Ijery</a>
-                    <a  class="btn btn-outline-warning" href="{{ path('sampana_edit', {'idSampana': sampana.idSampana}) }}">Anova</a>
+                    <a  class="btn btn-outline-info" href="{{ path('sampana_show', {'idSampana': sampana.id}) }}">Ijery</a>
+                    <a  class="btn btn-outline-warning" href="{{ path('sampana_edit', {'idSampana': sampana.id}) }}">Anova</a>
                 </td>
             </tr>
         {% else %}

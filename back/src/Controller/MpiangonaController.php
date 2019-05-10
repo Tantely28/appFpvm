@@ -45,20 +45,20 @@ class MpiangonaController extends AbstractController
         $mpiangona= new Mpiangona();
 
         $form=$this->createFormBuilder($mpiangona)
-            ->add('anaarana',TextType::class,[
+            ->add('anarana',TextType::class,[
                 'label'=>'Anarana',
                 'attr'=>[
                     'placeholder'=>'Anarana'
                 ]
             ])
-            ->add('idSampana',EntityType::class,[
+            ->add('sampana',EntityType::class,[
                 'class'=>Sampana::class,
                 'query_builder'  => function(EntityRepository $s){
-                    return $s->createQueryBuilder('s')->orderBy('s.idSampana','ASC');
+                    return $s->createQueryBuilder('s')->orderBy('s.id','ASC');
                 },
                 'label'=>'Sampana',
             ])
-            ->add('tel')
+            ->add('telephone')
             ->add('adresy')
             ->add('login')
             ->add('mdp',PasswordType::class,[
@@ -84,6 +84,16 @@ class MpiangonaController extends AbstractController
 
         return $this->render('mpiangona/create.html.twig',[
             'form'=>$form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("show/mpiangona/{id}", name="show_mpiangona")
+     */
+    public function show(Mpiangona $mpiangona)
+    {
+        return $this->render('mpiangona/show.html.twig',[
+            "mpiangona"=>$mpiangona
         ]);
     }
 }

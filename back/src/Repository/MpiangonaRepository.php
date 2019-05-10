@@ -29,7 +29,7 @@ class MpiangonaRepository extends ServiceEntityRepository
     public function findM()
     {
         return $this->createQueryBuilder('m')
-            ->orderBy('m.idMpiangona', 'DESC')
+            ->orderBy('m.id', 'DESC')
             ->getQuery()
             ->getResult();
     }

@@ -5,67 +5,53 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Temoignage
- *
- * @ORM\Table(name="temoignage", indexes={@ORM\Index(name="id_mpiangona", columns={"id_mpiangona"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\TemoignageRepository")
  */
 class Temoignage
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id_temoignage", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
      */
-    private $idTemoignage;
+    private $id;
 
     /**
-     * @var string|null
-     *
-     * @ORM\Column(name="contenue", type="text", length=65535, nullable=true)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Mpiangona", inversedBy="temoignages")
      */
-    private $contenue;
+    private $mpiangona;
 
     /**
-     * @var \Mpiangona
-     *
-     * @ORM\ManyToOne(targetEntity="Mpiangona")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_mpiangona", referencedColumnName="id_mpiangona")
-     * })
+     * @ORM\Column(type="text")
      */
-    private $idMpiangona;
+    private $contenu;
 
-    public function getIdTemoignage(): ?int
+    public function getId(): ?int
     {
-        return $this->idTemoignage;
+        return $this->id;
     }
 
-    public function getContenue(): ?string
+    public function getMpiangona(): ?Mpiangona
     {
-        return $this->contenue;
+        return $this->mpiangona;
     }
 
-    public function setContenue(?string $contenue): self
+    public function setMpiangona(?Mpiangona $mpiangona): self
     {
-        $this->contenue = $contenue;
+        $this->mpiangona = $mpiangona;
 
         return $this;
     }
 
-    public function getIdMpiangona(): ?Mpiangona
+    public function getContenu(): ?string
     {
-        return $this->idMpiangona;
+        return $this->contenu;
     }
 
-    public function setIdMpiangona(?Mpiangona $idMpiangona): self
+    public function setContenu(string $contenu): self
     {
-        $this->idMpiangona = $idMpiangona;
+        $this->contenu = $contenu;
 
         return $this;
     }
-
-
 }
