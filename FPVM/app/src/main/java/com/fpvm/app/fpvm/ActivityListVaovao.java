@@ -22,7 +22,7 @@ import java.util.List;
 
 public class ActivityListVaovao extends AppCompatActivity {
 
-    private static final String url="";
+    private static final String url="http://192.168.43.157:8000/api/read/vaovao";
     private ProgressDialog dialog;
     private List<Item> array= new ArrayList<Item>();
     private ListView listView;
@@ -54,8 +54,8 @@ public class ActivityListVaovao extends AppCompatActivity {
                         JSONObject obj=response.getJSONObject(i);
                         Item item=new Item();
 
-                        item.setTitle(obj.getString("title"));
-                        item.setNews(obj.getString("news"));
+                        item.setTitle(obj.getString("titre"));
+                        item.setNews(obj.getString("contenu"));
 
                         //add to array
                         array.add(item);
