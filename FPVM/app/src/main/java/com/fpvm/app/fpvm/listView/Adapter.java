@@ -6,13 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.fpvm.app.fpvm.R;
 
 import java.util.List;
 
-public class Adapter extends BaseAdapter{
+public class Adapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
@@ -59,4 +60,5 @@ public class Adapter extends BaseAdapter{
 
         return convertView;
     }
+
 }
