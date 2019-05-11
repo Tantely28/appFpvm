@@ -19,13 +19,20 @@ class AdidyRepository extends ServiceEntityRepository
         parent::__construct($registry, Adidy::class);
     }
 
-    public function findByExampleField($value)
+    public function findAdidy()
     {
         return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
+            ->orderBy('a.id', 'DESC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+    public function findadidyMpiangona($id)
+    {
+        return $this->createQueryBuilder('a')
+            ->join('a.id', 'm')
+            ->where('m.id = a.mpiangona.id')
             ->getQuery()
             ->getResult()
             ;
