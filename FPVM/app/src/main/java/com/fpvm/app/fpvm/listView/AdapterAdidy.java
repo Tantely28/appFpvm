@@ -13,13 +13,13 @@ import com.fpvm.app.fpvm.R;
 
 import java.util.List;
 
-public class Adapter extends BaseAdapter {
+public class AdapterAdidy extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Item> items;
+    private List<ItemAdidy> items;
 
-    public Adapter(Activity activity, List<Item> items){
+    public AdapterAdidy(Activity activity, List<ItemAdidy> items){
         this.activity=activity;
         this.items=items;
     }
@@ -45,22 +45,24 @@ public class Adapter extends BaseAdapter {
             inflater=(LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
         if(convertView==null){
-            convertView=inflater.inflate(R.layout.custom_layout,null);
+            convertView=inflater.inflate(R.layout.custom_layout_adidy,null);
 
-            TextView title= (TextView) convertView.findViewById(R.id.tv_title);
-            TextView rate= (TextView) convertView.findViewById(R.id.tv_news);
+            TextView nom= (TextView) convertView.findViewById(R.id.txt_nom);
+            TextView date= (TextView) convertView.findViewById(R.id.txt_date);
+            TextView montant= (TextView) convertView.findViewById(R.id.txt_montant);
 
             //getting data for row
-            Item item=items.get(position);
-            //title
-            title.setText(item.getTitle());
-            //rate
-            rate.setText(item.getNews());
+            ItemAdidy item=items.get(position);
+            //nom
+            nom.setText(item.getNom());
+            //date
+            date.setText(item.getDate());
+            //montant
+            montant.setText(item.getMontant());
 
             //year.setText(String.valueof(item.getYear());
         }
 
         return convertView;
     }
-
 }
