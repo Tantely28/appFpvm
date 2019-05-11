@@ -15,10 +15,10 @@
             <tr><th>Anarana</th><th>Téléphone</th><th>Action</th></tr>
             </thead>
             {% for m in mpiangona %}
-                <tbody><tr><td>{{ m.anaarana }}</td><td>0{{ m.tel }}</td>
+                <tbody><tr><td>{{ m.anarana }}</td><td>0{{ m.telephone }}</td>
                     <td>
-                     <a href="#" class="btn btn-primary">Ijery</a>
-                        <a href="#" class="btn btn-secondary">Anova</a>
+                     <a href="{{ path("show_mpiangona",{"id":m.id}) }}" class="btn btn-primary">Ijery</a>
+                        <a href="{{ path('update_mpiangona',{'id':m.id}) }}" class="btn btn-secondary">Anova</a>
                         <a href="#" class="btn btn-danger">Amafa</a>
                     </td>
                 </tr></tbody>

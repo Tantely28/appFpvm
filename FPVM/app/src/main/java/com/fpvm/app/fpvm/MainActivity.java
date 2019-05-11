@@ -31,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         sessionManager=new SessionManager(this);
 
         if(sessionManager.isLogged()){
+
+            String idMpiangona=sessionManager.getId();
+
             Intent i=new Intent(this,NavigationActivity.class);
+            i.putExtra("idMpiangona",idMpiangona);
             startActivity(i);
             finish();
         }

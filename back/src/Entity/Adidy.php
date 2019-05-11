@@ -5,56 +5,52 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Adidy
- *
- * @ORM\Table(name="adidy", indexes={@ORM\Index(name="id_mpiangona", columns={"id_mpiangona"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\AdidyRepository")
  */
 class Adidy
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id_adidy", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
      */
-    private $idAdidy;
+    private $id;
 
     /**
-     * @var \DateTime|null
-     *
-     * @ORM\Column(name="daty_nanefana", type="datetime", nullable=true)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Mpiangona", inversedBy="adidies")
+     */
+    private $mpiangona;
+
+    /**
+     * @ORM\Column(type="datetime")
      */
     private $datyNanefana;
 
     /**
-     * @var \DateTime|null
-     *
-     * @ORM\Column(name="volana", type="date", nullable=true)
+     * @ORM\Column(type="datetime")
      */
     private $volana;
 
     /**
-     * @var int|null
-     *
-     * @ORM\Column(name="vola", type="integer", nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $vola;
 
-    /**
-     * @var \Mpiangona
-     *
-     * @ORM\ManyToOne(targetEntity="Mpiangona")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_mpiangona", referencedColumnName="id_mpiangona")
-     * })
-     */
-    private $idMpiangona;
-
-    public function getIdAdidy(): ?int
+    public function getId(): ?int
     {
-        return $this->idAdidy;
+        return $this->id;
+    }
+
+    public function getMpiangona(): ?Mpiangona
+    {
+        return $this->mpiangona;
+    }
+
+    public function setMpiangona(?Mpiangona $mpiangona): self
+    {
+        $this->mpiangona = $mpiangona;
+
+        return $this;
     }
 
     public function getDatyNanefana(): ?\DateTimeInterface
@@ -62,7 +58,7 @@ class Adidy
         return $this->datyNanefana;
     }
 
-    public function setDatyNanefana(?\DateTimeInterface $datyNanefana): self
+    public function setDatyNanefana(\DateTimeInterface $datyNanefana): self
     {
         $this->datyNanefana = $datyNanefana;
 
@@ -74,36 +70,22 @@ class Adidy
         return $this->volana;
     }
 
-    public function setVolana(?\DateTimeInterface $volana): self
+    public function setVolana(\DateTimeInterface $volana): self
     {
         $this->volana = $volana;
 
         return $this;
     }
 
-    public function getVola(): ?int
+    public function getVola(): ?string
     {
         return $this->vola;
     }
 
-    public function setVola(?int $vola): self
+    public function setVola(string $vola): self
     {
         $this->vola = $vola;
 
         return $this;
     }
-
-    public function getIdMpiangona(): ?Mpiangona
-    {
-        return $this->idMpiangona;
-    }
-
-    public function setIdMpiangona(?Mpiangona $idMpiangona): self
-    {
-        $this->idMpiangona = $idMpiangona;
-
-        return $this;
-    }
-
-
 }

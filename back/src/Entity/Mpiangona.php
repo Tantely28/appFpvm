@@ -2,102 +2,110 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Mpiangona
- *
- * @ORM\Table(name="mpiangona", indexes={@ORM\Index(name="id_sampana", columns={"id_sampana"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\MpiangonaRepository")
  */
 class Mpiangona
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id_mpiangona", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
      */
-    private $idMpiangona;
+    private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="anaarana", type="string", length=255, nullable=false)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Sampana", inversedBy="mpiangonas")
      */
-    private $anaarana;
+    private $sampana;
 
     /**
-     * @var int|null
-     *
-     * @ORM\Column(name="tel", type="integer", nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
-    private $tel;
+    private $anarana;
 
     /**
-     * @var string|null
-     *
-     * @ORM\Column(name="adresy", type="string", length=255, nullable=true)
+     * @ORM\Column(type="integer")
+     */
+    private $telephone;
+
+    /**
+     * @ORM\Column(type="string", length=255)
      */
     private $adresy;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="login", type="string", length=255, nullable=false)
+     * @ORM\Column(type="string", length=255)
      */
     private $login;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="mdp", type="string", length=255, nullable=false)
+     * @ORM\Column(type="string", length=255)
      */
     private $mdp;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="mpandray", type="string", length=10, nullable=false)
+     * @ORM\Column(type="string", length=5)
      */
     private $mpandray;
 
     /**
-     * @var \Sampana
-     *
-     * @ORM\ManyToOne(targetEntity="Sampana")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_sampana", referencedColumnName="id_sampana")
-     * })
+     * @ORM\OneToMany(targetEntity="App\Entity\Temoignage", mappedBy="mpiangona")
      */
-    private $idSampana;
+    private $temoignages;
 
-    public function getIdMpiangona(): ?int
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Adidy", mappedBy="mpiangona")
+     */
+    private $adidies;
+
+    public function __construct()
     {
-        return $this->idMpiangona;
+        $this->temoignages = new ArrayCollection();
+        $this->adidies = new ArrayCollection();
     }
 
-    public function getAnaarana(): ?string
+    public function getId(): ?int
     {
-        return $this->anaarana;
+        return $this->id;
     }
 
-    public function setAnaarana(string $anaarana): self
+    public function getSampana(): ?Sampana
     {
-        $this->anaarana = $anaarana;
+        return $this->sampana;
+    }
+
+    public function setSampana(?Sampana $sampana): self
+    {
+        $this->sampana = $sampana;
 
         return $this;
     }
 
-    public function getTel(): ?int
+    public function getAnarana(): ?string
     {
-        return $this->tel;
+        return $this->anarana;
     }
 
-    public function setTel(?int $tel): self
+    public function setAnarana(string $anarana): self
     {
-        $this->tel = $tel;
+        $this->anarana = $anarana;
+
+        return $this;
+    }
+
+    public function getTelephone(): ?int
+    {
+        return $this->telephone;
+    }
+
+    public function setTelephone(int $telephone): self
+    {
+        $this->telephone = $telephone;
 
         return $this;
     }
@@ -107,7 +115,7 @@ class Mpiangona
         return $this->adresy;
     }
 
-    public function setAdresy(?string $adresy): self
+    public function setAdresy(string $adresy): self
     {
         $this->adresy = $adresy;
 
@@ -150,17 +158,65 @@ class Mpiangona
         return $this;
     }
 
-    public function getIdSampana(): ?Sampana
+    /**
+     * @return Collection|Temoignage[]
+     */
+    public function getTemoignages(): Collection
     {
-        return $this->idSampana;
+        return $this->temoignages;
     }
 
-    public function setIdSampana(?Sampana $idSampana): self
+    public function addTemoignage(Temoignage $temoignage): self
     {
-        $this->idSampana = $idSampana;
+        if (!$this->temoignages->contains($temoignage)) {
+            $this->temoignages[] = $temoignage;
+            $temoignage->setMpiangona($this);
+        }
 
         return $this;
     }
 
+    public function removeTemoignage(Temoignage $temoignage): self
+    {
+        if ($this->temoignages->contains($temoignage)) {
+            $this->temoignages->removeElement($temoignage);
+            // set the owning side to null (unless already changed)
+            if ($temoignage->getMpiangona() === $this) {
+                $temoignage->setMpiangona(null);
+            }
+        }
 
+        return $this;
+    }
+
+    /**
+     * @return Collection|Adidy[]
+     */
+    public function getAdidies(): Collection
+    {
+        return $this->adidies;
+    }
+
+    public function addAdidy(Adidy $adidy): self
+    {
+        if (!$this->adidies->contains($adidy)) {
+            $this->adidies[] = $adidy;
+            $adidy->setMpiangona($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdidy(Adidy $adidy): self
+    {
+        if ($this->adidies->contains($adidy)) {
+            $this->adidies->removeElement($adidy);
+            // set the owning side to null (unless already changed)
+            if ($adidy->getMpiangona() === $this) {
+                $adidy->setMpiangona(null);
+            }
+        }
+
+        return $this;
+    }
 }

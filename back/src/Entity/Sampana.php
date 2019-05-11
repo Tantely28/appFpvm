@@ -2,35 +2,40 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Sampana
- *
- * @ORM\Table(name="sampana")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\SampanaRepository")
  */
 class Sampana
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id_sampana", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
      */
-    private $idSampana;
+    private $id;
 
     /**
-     * @var string|null
-     *
-     * @ORM\Column(name="anarana", type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=100)
      */
     private $anarana;
 
-    public function getIdSampana(): ?int
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Mpiangona", mappedBy="sampana")
+     */
+    private $mpiangonas;
+
+    public function __construct()
     {
-        return $this->idSampana;
+        $this->mpiangonas = new ArrayCollection();
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
     }
 
     public function getAnarana(): ?string
@@ -38,13 +43,43 @@ class Sampana
         return $this->anarana;
     }
 
-    public function setAnarana(?string $anarana): self
+    public function setAnarana(string $anarana): self
     {
         $this->anarana = $anarana;
 
         return $this;
     }
 
+    /**
+     * @return Collection|Mpiangona[]
+     */
+    public function getMpiangonas(): Collection
+    {
+        return $this->mpiangonas;
+    }
+
+    public function addMpiangona(Mpiangona $mpiangona): self
+    {
+        if (!$this->mpiangonas->contains($mpiangona)) {
+            $this->mpiangonas[] = $mpiangona;
+            $mpiangona->setSampana($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMpiangona(Mpiangona $mpiangona): self
+    {
+        if ($this->mpiangonas->contains($mpiangona)) {
+            $this->mpiangonas->removeElement($mpiangona);
+            // set the owning side to null (unless already changed)
+            if ($mpiangona->getSampana() === $this) {
+                $mpiangona->setSampana(null);
+            }
+        }
+
+        return $this;
+    }
     public function __toString()
     {
         return $this->anarana;
