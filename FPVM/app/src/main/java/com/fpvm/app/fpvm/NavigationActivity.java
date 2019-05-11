@@ -44,7 +44,7 @@ public class NavigationActivity extends AppCompatActivity
 
     private SessionManager sessionManager;
 
-    private static final String url="http://192.168.88.193:8000/api/read/vaovao";
+    private static final String url="http://192.168.88.47:8000/api/read/vaovao";
     //http://192.168.88.234:8000/api/read/vaovao
     private ProgressDialog dialog;
     private List<Item> array= new ArrayList<Item>();
@@ -126,7 +126,6 @@ public class NavigationActivity extends AppCompatActivity
             }
         });
         AppController.getInstance().addToRequestQueue(jsonArrayRequest);
-
     }
 
     @Override
@@ -165,8 +164,6 @@ public class NavigationActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-
-
 
         int id = item.getItemId();
 

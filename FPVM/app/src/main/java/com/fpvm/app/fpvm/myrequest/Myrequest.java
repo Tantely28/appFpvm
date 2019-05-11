@@ -89,7 +89,7 @@ public class Myrequest {
     }
 
     public void connection(final String pseudo, final String password, final LoginCallback loginCallback){
-        String url="http://192.168.88.193:8000/api/login/mpiangona";
+        String url="http://192.168.88.47:8000/api/login/mpiangona";
 
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

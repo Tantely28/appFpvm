@@ -53,9 +53,9 @@ class MpikambanaController extends AbstractController
                 foreach ($mpiangona as $posts) {
                     $formatted= [
                         'error'=>false,
-                        'id'=>(String)$posts->getIdMpiangona(),
-                        'anarana'=>$posts->getAnaarana(),
-                        'telephone'=>$posts->getTel(),
+                        'id'=>(String)$posts->getId(),
+                        'anarana'=>$posts->getAnarana(),
+                        'telephone'=>$posts->getTelephone(),
                         'adresy'=>$posts->getAdresy(),
                         'mpandray'=>$posts->getMpandray(),
                         'login' => $posts->getLogin(),
@@ -91,4 +91,14 @@ class MpikambanaController extends AbstractController
         return new JsonResponse($formatted);
 
     }
+
+    /**
+     * @Route\Get("/read/adidy")
+     */
+    public function adidy()
+    {
+
+    }
+
+
 }
