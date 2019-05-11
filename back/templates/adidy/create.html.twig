@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdidyController!{% endblock %}
+
+{% block body %}
+    <br> <h2 style="text-align: center; text-decoration: underline; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;"><b>Hanefa adidy</b></h2><br>
+    {{ form_start(form) }}
+    {{ form_row(form.mpiangona) }}
+    {{ form_row(form.datyNanefana) }}
+    {{ form_row(form.volana) }}
+    {{ form_row(form.vola) }}
+    <input type="submit" value="Apidirina" class="btn btn-primary">
+    {{ form_end(form) }}
+{% endblock %}

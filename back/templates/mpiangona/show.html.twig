@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mpiangona!{% endblock %}
+
+{% block body %}
+    <h2 style="text-align: center; text-decoration: underline; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Mpiangona iray</h2>
+    <div class="container mt-4">
+        <table class="table table-sm">
+            <tr><td><b>Anarana:</b></td><td>{{ mpiangona.anarana }}</td></tr>
+            <tr><td><b>Sampana:</b></td><td>{{ mpiangona.sampana.anarana }}</td></tr>
+            <tr><td><b>Telephone:</b></td><td>{{ mpiangona.telephone }}</td></tr>
+            <tr><td><b>Adresy:</b></td><td>{{ mpiangona.adresy }}</td></tr>
+            <tr><td><b>Mpandray:</b></td><td>{{ mpiangona.mpandray }}</td></tr>
+            <td><a href="{{ path('update_mpiangona',{'id':mpiangona.id}) }}" class="btn btn-secondary">Anova</a></td>
+        </table>
+    </div>
+{% endblock %}

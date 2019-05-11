@@ -8,6 +8,7 @@
 
 namespace App\Controller\api;
 
+use App\Repository\AdidyRepository;
 use App\Repository\MpiangonaRepository;
 use App\Repository\VaovaoRepository;
 use PhpParser\Node\Scalar\String_;
@@ -30,11 +31,16 @@ class MpikambanaController extends AbstractController
      * @var VaovaoRepository
      */
     private $vaovaoRepository;
+    /**
+     * @var AdidyRepository
+     */
+    private $adidyRepository;
 
-    public function __construct(MpiangonaRepository $mpiangonaRepository, VaovaoRepository $vaovaoRepository)
+    public function __construct(MpiangonaRepository $mpiangonaRepository, VaovaoRepository $vaovaoRepository,AdidyRepository $adidyRepository)
     {
         $this->mpiangonaRepository=$mpiangonaRepository;
         $this->vaovaoRepository = $vaovaoRepository;
+        $this->adidyRepository = $adidyRepository;
     }
 
     /**
@@ -53,9 +59,9 @@ class MpikambanaController extends AbstractController
                 foreach ($mpiangona as $posts) {
                     $formatted= [
                         'error'=>false,
-                        'id'=>(String)$posts->getIdMpiangona(),
-                        'anarana'=>$posts->getAnaarana(),
-                        'telephone'=>$posts->getTel(),
+                        'id'=>(String)$posts->getId(),
+                        'anarana'=>$posts->getAnarana(),
+                        'telephone'=>$posts->getTelephone(),
                         'adresy'=>$posts->getAdresy(),
                         'mpandray'=>$posts->getMpandray(),
                         'login' => $posts->getLogin(),
@@ -91,4 +97,25 @@ class MpikambanaController extends AbstractController
         return new JsonResponse($formatted);
 
     }
+
+    /**
+     * @Rest\Get("/read/adidy"/{id})
+     */
+    public function adidy()
+    {
+        $adidy=$this->adidyRepository->findAdidy();
+
+        $formatted = [];
+        foreach ($adidy as $vao) {
+            $formatted[]= [
+                'id'=>$vao->getIdVaovao(),
+                'titre'=>$vao->getTitre(),
+                'contenu'=>$vao->getContenu(),
+            ];
+        }
+
+        return new JsonResponse($formatted);
+    }
+
+
 }
