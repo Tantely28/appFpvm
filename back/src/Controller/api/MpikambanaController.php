@@ -99,7 +99,7 @@ class MpikambanaController extends AbstractController
     }
 
     /**
-     * @Rest\Get("/read/adidy"/{id})
+     * @Rest\Get("/read/adidy/{id}")
      */
     public function adidy()
     {
