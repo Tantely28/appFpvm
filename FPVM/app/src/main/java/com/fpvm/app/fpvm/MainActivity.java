@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             String idMpiangona=sessionManager.getId();
 
             Intent i=new Intent(this,NavigationActivity.class);
-            i.putExtra("idMpiangona",idMpiangona);
             startActivity(i);
             finish();
         }
