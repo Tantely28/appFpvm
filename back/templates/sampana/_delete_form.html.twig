@@ -1,5 +1,5 @@
-<form method="post" action="{{ path('sampana_delete', {'idSampana': sampana.idSampana}) }}" onsubmit="return confirm('Hamafa tokoa ve?');">
+<form method="post" action="{{ path('sampana_delete', {'idSampana': sampana.id }) }}" onsubmit="return confirm('Hamafa tokoa ve?');">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ sampana.idSampana) }}">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ sampana.id) }}">
     <button class="btn btn-danger btn-lg btn-block">Amafa</button>
 </form>

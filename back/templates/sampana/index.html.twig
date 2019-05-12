@@ -19,8 +19,8 @@
                 <td>{{ sampana.id }}</td>
                 <td>{{ sampana.anarana }}</td>
                 <td>
-                    <a  class="btn btn-outline-info" href="{{ path('sampana_show', {'idSampana': sampana.id}) }}">Ijery</a>
-                    <a  class="btn btn-outline-warning" href="{{ path('sampana_edit', {'idSampana': sampana.id}) }}">Anova</a>
+                    <a  class="btn btn-outline-info" href="{{ path('sampana_show', {'id': sampana.id}) }}">Ijery</a>
+                    <a  class="btn btn-outline-warning" href="{{ path('sampana_edit', {'id': sampana.id}) }}">Anova</a>
                 </td>
             </tr>
         {% else %}
