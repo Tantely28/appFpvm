@@ -3,9 +3,10 @@
 {% block title %}Vaovao{% endblock %}
 
 {% block body %}
+    <body style="background: url(/images/bg4.jpg) no-repeat center;">
     <h1 style="text-align: center; text-decoration: underline; font-weight: bold; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Vaovao</h1>
 
-    <table class="table" style="font-family: Arial; text-align: center; border: 2px solid #000000;">
+    <table class="table" style="font-family: Arial; text-align: center; border: 2px solid #000000; border-radius: 1px;">
         <thead>
             <tr style="font-size:20px;">
                 <th>Laharana</th>
@@ -33,5 +34,6 @@
     </table>
 
     <a class="btn btn-primary" href="{{ path('vaovao_new') }}">Hapiditra Vaovao</a>
+    </body>
 {% endblock %}
 

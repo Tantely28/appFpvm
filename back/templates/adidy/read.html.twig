@@ -9,18 +9,17 @@
         <table class="table table-striped" style="font-family: Arial; text-align: center; border: 2px solid #000000;">
 
             <thead>
-            <tr><th>Mpiangona</th><th>Daty nanefahana</th><th>Volana</th><th>Vola</th><th></th></tr>
+            <tr><th>Mpiangona</th><th>Daty nanefahana</th><th>Volana naloha</th><th>Vola</th><th></th></tr>
             </thead>
             {% for m in adidy %}
                 <tbody><tr><td>{{ m.mpiangona.anarana }}</td><td>{{ m.datyNanefana |date('d-m-Y') }}</td><td>{{ m.volana |date('m-Y') }}</td><td>{{ m.vola }}</td>
                     <td>
-                        <a href="{{ path("show_mpiangona",{"id":m.id}) }}" class="btn btn-outline-info">Ijery</a>
-                        <a href="{{ path('update_mpiangona',{'id':m.id}) }}" class="btn btn-outline-warning">Anova</a>
-                        <a href="#" class="btn btn-outline-danger">Amafa</a>
+                        <a href="{{ path("show_adidy",{"id":m.id}) }}" class="btn btn-outline-info">Ijery</a>
+                        <a href="{{ path('update_adidy',{'id':m.id}) }}" class="btn btn-outline-warning">Anova</a>
                     </td>
                 </tr></tbody>
             {% endfor %}
         </table>
-        <a href="{{ path('create_adidy') }}" class="btn btn-primary" style="margin-bottom: 10px;">Apiditra adidy vaovao</a>
+        <a href="{{ path('create_adidy') }}" class="btn btn-primary" style="margin-bottom: 10px;">Hapiditra adidy vaovao</a>
     </div>
 {% endblock %}

@@ -42,7 +42,9 @@ class AdidyController extends AbstractController
             }
             ])
             ->add('datyNanefana',DateType::class)
-            ->add('volana',DateType::class)
+            ->add('volana',DateType::class,[
+                'label'=>'Volana naloha',
+            ])
             ->add('vola',TextType::class)
             ->getForm();
         $form->handleRequest($request);
@@ -69,6 +71,48 @@ class AdidyController extends AbstractController
 
         return $this->render('adidy/read.html.twig',[
             'adidy'=>$adidy
+        ]);
+    }
+
+    /**
+     * @Route("/show/adidy/{id}", name="show_adidy")
+     */
+    public function show(Adidy $adidy)
+    {
+        return $this->render('adidy/show.html.twig',[
+            'adidy'=>$adidy
+        ]);
+    }
+
+    /**
+     * @Route("/update/adidy/{id}", name="update_adidy")
+     */
+    public function update(Adidy $adidy, Request $request)
+    {
+        $form=$this->createFormBuilder($adidy)
+            ->add('mpiangona',EntityType::class,[
+                'class'=>Mpiangona::class,
+                'query_builder'  => function(EntityRepository $s){
+                    return $s->createQueryBuilder('s')->orderBy('s.anarana','ASC');
+                }
+            ])
+            ->add('datyNanefana',DateType::class)
+            ->add('volana',DateType::class,[
+                'label'=>'Volana naloha',
+            ])
+            ->add('vola',TextType::class)
+            ->getForm();
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid())
+        {
+            $em=$this->getDoctrine()->getManager();
+            $em->persist($adidy);
+            $em->flush();
+            return $this->redirectToRoute('read_adidy');
+        }
+
+        return $this->render('adidy/update.html.twig',[
+            'form'=>$form->createView()
         ]);
     }
 }
