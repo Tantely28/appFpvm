@@ -8,6 +8,7 @@
 
 namespace App\Controller\api;
 
+use App\Entity\Mpiangona;
 use App\Repository\AdidyRepository;
 use App\Repository\MpiangonaRepository;
 use App\Repository\VaovaoRepository;
@@ -101,16 +102,18 @@ class MpikambanaController extends AbstractController
     /**
      * @Rest\Get("/read/adidy/{id}")
      */
-    public function adidy()
+    public function adidy(Mpiangona $mpiangona)
     {
-        $adidy=$this->adidyRepository->findAdidy();
+        $adidy=$this->adidyRepository->findadidyMpiangona($mpiangona->getId());
 
         $formatted = [];
         foreach ($adidy as $vao) {
             $formatted[]= [
-                'id'=>$vao->getIdVaovao(),
-                'titre'=>$vao->getTitre(),
-                'contenu'=>$vao->getContenu(),
+                'id'=>$vao->getId(),
+                'mpiangona'=>$vao->getMpiangona()->getAnarana(),
+                'date_nanefana'=>$vao->getDatyNanefana()->format('d-m-Y'),
+                'volana'=>$vao->getVolana()->format('m-Y'),
+                'vola'=>$vao->getVola()
             ];
         }
 
