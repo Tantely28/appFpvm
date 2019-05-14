@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/templates/adidy/create.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/adidy/read.html.twig" afterDir="false" />
@@ -21,6 +22,12 @@
 =======
     <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="" />
 >>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+    <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base_exportee/bdd_fpvm.sql" beforeDir="false" />
+    </list>
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
               <folding>
                 <element signature="e#120#155#0#PHP" expanded="true" />
               </folding>
@@ -189,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/Controller/AdidyController.php" />
         <option value="$PROJECT_DIR$/templates/adidy/read.html.twig" />
         <option value="$PROJECT_DIR$/templates/adidy/create.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" />
         <option value="$PROJECT_DIR$/src/Repository/AdidyRepository.php" />
+        <option value="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" />
       </list>
     </option>
   </component>
@@ -435,14 +442,19 @@
       <workItem from="1557564387867" duration="3916000" />
       <workItem from="1557573187409" duration="4063000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
 =======
       <workItem from="1557578762693" duration="782000" />
 >>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+      <workItem from="1557578762693" duration="1554000" />
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="155432000" />
@@ -456,6 +468,9 @@
 =======
     <option name="totallyTimeSpent" value="176155000" />
 >>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+    <option name="totallyTimeSpent" value="176927000" />
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -891,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/api/MpikambanaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+        <state relative-caret-position="138">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
           <folding>
             <element signature="e#120#155#0#PHP" expanded="true" />
           </folding>
