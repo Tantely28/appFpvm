@@ -28,14 +28,12 @@ class AdidyRepository extends ServiceEntityRepository
             ;
     }
 
-    public function findadidyMpiangona($id)
+    public function findadidyMpiangona($idMpiangona):array
     {
-        return $this->createQueryBuilder('a')
-            ->join('a.id', 'm')
-            ->where('m.id = a.mpiangona.id')
-            ->getQuery()
-            ->getResult()
-            ;
+        $em=$this->getEntityManager();
+        $query=$em->createQuery('SELECT a FROM App\Entity\Adidy a INNER JOIN App\Entity\Mpiangona m where a.mpiangona=m.id and m.id= :idSession')
+        ->setParameter('idSession',$idMpiangona);
+        return $query->execute();
     }
 
     // /**

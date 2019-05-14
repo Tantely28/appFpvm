@@ -59,9 +59,24 @@ class MpiangonaController extends AbstractController
                 },
                 'label'=>'Sampana',
             ])
-            ->add('telephone')
-            ->add('adresy')
-            ->add('login')
+            ->add('telephone', TextType::class,[
+                'label'=>'Telefaonina',
+                'attr'=>[
+                    'placeholder'=>'Telefaonina'
+                ]
+            ])
+            ->add('adresy',TextType::class, [
+                'label'=>'Adiresy',
+                'attr'=>[
+                    'placeholder'=>'Adiresy'
+                ]
+            ])
+            ->add('login',TextType::class, [
+                'label'=>'Solonanarana',
+                'attr'=>[
+                     'placeholder'=>'Solonanarana'
+                ]
+             ])
             ->add('mdp',PasswordType::class,[
                 'label'=>'Tenimihafina',
                 'attr'=>[
@@ -70,8 +85,8 @@ class MpiangonaController extends AbstractController
             ])
             ->add('mpandray',ChoiceType::class,[
                 'choices'  => [
-                'Oui' => 'oui',
-                'Non' => 'non',],
+                'Eny' => 'Eny',
+                'Tsia' => 'Tsia',],
                 'label'=>'Mpandray ve'
             ])
             ->getForm();
@@ -120,9 +135,24 @@ class MpiangonaController extends AbstractController
                 },
                 'label'=>'Sampana',
             ])
-            ->add('telephone')
-            ->add('adresy')
-            ->add('login')
+            ->add('telephone', TextType::class,[
+                'label'=>'Telefaonina',
+                'attr'=>[
+                    'placeholder'=>'Telefaonina'
+                ]
+            ])
+            ->add('adresy',TextType::class, [
+                'label'=>'Adiresy',
+                'attr'=>[
+                    'placeholder'=>'Adiresy'
+                ]
+            ])
+            ->add('login',TextType::class, [
+                'label'=>'Solonanarana',
+                'attr'=>[
+                    'placeholder'=>'Solonanarana'
+                ]
+            ])
             ->add('mdp',PasswordType::class,[
                 'label'=>'Tenimihafina',
                 'attr'=>[
@@ -131,8 +161,8 @@ class MpiangonaController extends AbstractController
             ])
             ->add('mpandray',ChoiceType::class,[
                 'choices'  => [
-                    'Oui' => 'oui',
-                    'Non' => 'non',],
+                    'Eny' => 'eny',
+                    'Tsia' => 'tsia',],
                 'label'=>'Mpandray ve'
             ])
             ->getForm();

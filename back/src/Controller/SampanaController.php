@@ -52,7 +52,7 @@ class SampanaController extends AbstractController
     }
 
     /**
-     * @Route("/show/{idSampana}", name="sampana_show", methods={"GET"})
+     * @Route("/show/{id}", name="sampana_show", methods={"GET"})
      */
     public function show(Sampana $sampana): Response
     {
@@ -62,7 +62,7 @@ class SampanaController extends AbstractController
     }
 
     /**
-     * @Route("/edit/{idSampana}", name="sampana_edit", methods={"GET","POST"})
+     * @Route("/edit/{id}", name="sampana_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Sampana $sampana): Response
     {
