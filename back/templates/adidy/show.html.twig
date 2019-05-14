@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fpvm!{% endblock %}
+
+{% block body %}
+    <h2 style="text-align: center; text-decoration: underline; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Adidin'ny Mpiangona {{ adidy.mpiangona.anarana }}</h2>
+    <div class="container mt-4">
+        <table class="table table-sm">
+            <tr><td><b>Daty nanefana:</b></td><td>{{ adidy.datyNanefana |date('d-m-Y') }}</td></tr>
+            <tr><td><b>Volana:</b></td><td>{{ adidy.volana |date('d-m-Y') }}</td></tr>
+            <tr><td><b>Vola nohefana:</b></td><td>{{ adidy.vola }}</td></tr>
+            <tr><td><a href="{{ path('update_adidy',{'id':adidy.id}) }}" class="btn btn-secondary">Anova</a></td></tr>
+        </table>
+    </div>
+{% endblock %}

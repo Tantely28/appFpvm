@@ -14,9 +14,8 @@
             {% for m in adidy %}
                 <tbody><tr><td>{{ m.mpiangona.anarana }}</td><td>{{ m.datyNanefana |date('d-m-Y') }}</td><td>{{ m.volana |date('m-Y') }}</td><td>{{ m.vola }}</td>
                     <td>
-                        <a href="{{ path("show_mpiangona",{"id":m.id}) }}" class="btn btn-primary">Ijery</a>
-                        <a href="{{ path('update_mpiangona',{'id':m.id}) }}" class="btn btn-secondary">Anova</a>
-                        <a href="#" class="btn btn-danger">Amafa</a>
+                        <a href="{{ path("show_adidy",{"id":m.id}) }}" class="btn btn-primary">Ijery</a>
+                        <a href="{{ path('update_adidy',{'id':m.id}) }}" class="btn btn-secondary">Anova</a>
                     </td>
                 </tr></tbody>
             {% endfor %}
