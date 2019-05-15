@@ -3,21 +3,22 @@
 {% block title %}Vaovao{% endblock %}
 
 {% block body %}
+<body style="background: url(/images/bg4.jpg) no-repeat center;">
     <h1 style="text-align: center; text-decoration: underline; font-weight: bold; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Ijery Vaovao</h1>
 
     <table class="table">
         <tbody class="table" style="font-family: Arial; text-align: center; border: 2px solid #000000;">
             <tr style="font-size:20px;">
-                <th>Laharana</th>
-                <td>{{ vaovao.idVaovao }}</td>
+                <th style="border: 2px solid #c6c6c6;">Laharana</th>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.idVaovao }}</td>
             </tr>
             <tr>
-                <th>Lohateny</th>
-                <td>{{ vaovao.titre }}</td>
+                <th style="border: 2px solid #c6c6c6;">Lohateny</th>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.titre }}</td>
             </tr>
             <tr>
-                <th>Votohatiny</th>
-                <td>{{ vaovao.contenu }}</td>
+                <th style="border: 2px solid #c6c6c6;">Votohatiny</th>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.contenu }}</td>
             </tr>
         </tbody>
     </table>
@@ -25,4 +26,5 @@
     <a class="btn btn-warning btn-lg btn-block" href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}" style="margin-bottom: 10px;">Anova</a>
 
     {{ include('vaovao/_delete_form.html.twig') }}
+</body>
 {% endblock %}

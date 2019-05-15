@@ -3,15 +3,32 @@
 {% block title %}Mpiangona!{% endblock %}
 
 {% block body %}
+<body style="background: url(/images/bg4.jpg) no-repeat center;">
     <h2 style="text-align: center; text-decoration: underline; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Mpiangona iray</h2>
     <div class="container mt-4">
         <table class="table table-sm" style="font-family: Arial; text-align: center; border: 2px solid #000000;">
-            <tr><td><b>Anarana:</b></td><td>{{ mpiangona.anarana }}</td></tr>
-            <tr><td><b>Sampana:</b></td><td>{{ mpiangona.sampana.anarana }}</td></tr>
-            <tr><td><b>Telefaonina:</b></td><td>{{ mpiangona.telephone }}</td></tr>
-            <tr><td><b>Adiresy:</b></td><td>{{ mpiangona.adresy }}</td></tr>
-            <tr><td><b>Mpandray:</b></td><td>{{ mpiangona.mpandray }}</td></tr>
+            <tr>
+                <td style="border: 2px solid #c6c6c6;"><b>Anarana:</b></td>
+                <td style="border: 2px solid #c6c6c6;">{{ mpiangona.anarana }}</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid #c6c6c6;"><b>Sampana:</b></td>
+                <td style="border: 2px solid #c6c6c6;">{{ mpiangona.sampana.anarana }}</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid #c6c6c6;"><b>Telefaonina:</b></td>
+                <td style="border: 2px solid #c6c6c6;">{{ mpiangona.telephone }}</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid #c6c6c6;"><b>Adiresy:</b></td>
+                <td style="border: 2px solid #c6c6c6;">{{ mpiangona.adresy }}</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid #c6c6c6;"><b>Mpandray:</b></td>
+                <td style="border: 2px solid #c6c6c6;">{{ mpiangona.mpandray }}</td>
+            </tr>
         </table>
         <a href="{{ path('update_mpiangona',{'id':mpiangona.id}) }}" class="btn btn-warning btn-lg btn-block">Anova</a>
     </div>
+</body>
 {% endblock %}

@@ -6,21 +6,22 @@
     <body style="background: url(/images/bg4.jpg) no-repeat center;">
     <h1 style="text-align: center; text-decoration: underline; font-weight: bold; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Vaovao</h1>
 
-    <table class="table" style="font-family: Arial; text-align: center; border: 2px solid #000000; border-radius: 1px;">
+    <table class="table" style="font-family: Arial; text-align: center; border: 2px solid #c6c6c6; border-radius: 6px;">
         <thead>
             <tr style="font-size:20px;">
-                <th>Laharana</th>
-                <th>Lohateny</th>
-                <th>Votohatiny</th>
+                <th style="border: 2px solid #c6c6c6;">Laharana</th>
+                <th style="border: 2px solid #c6c6c6;">Lohateny</th>
+                <th style="border: 2px solid #c6c6c6;">Votohatiny</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
         {% for vaovao in vaovaos %}
             <tr>
-                <td>{{ vaovao.idVaovao }}</td>
-                <td>{{ vaovao.titre }}</td>
-                <td>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.idVaovao }}</td>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.titre }}</td>
+                <td style="border: 2px solid #c6c6c6;">{{ vaovao.contenu }}</td>
+                <td style="border: 2px solid #c6c6c6;">
                     <a class="btn btn-outline-info" href="{{ path('vaovao_show', {'idVaovao': vaovao.idVaovao}) }}">Ijery</a>
                     <a class="btn btn-outline-warning" href="{{ path('vaovao_edit', {'idVaovao': vaovao.idVaovao}) }}">Anova</a>
                 </td>

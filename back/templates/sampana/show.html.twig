@@ -3,17 +3,18 @@
 {% block title %}Sampana{% endblock %}
 
 {% block body %}
+<body style="background: url(/images/bg4.jpg) no-repeat center;">
     <h1 style="text-align: center; text-decoration: underline; font-weight: bold; font-family: 'Arial Black'; color: #710193; margin-top: 20px; margin-bottom: 20px;">Sampana</h1>
 
     <table class="table">
         <tbody style="font-family: Arial; text-align: center; border: 2px solid #000000;">
             <tr>
-                <th></th>
-                <td>{{ sampana.id }}</td>
+                <th style="border: 2px solid #c6c6c6;"></th>
+                <td style="border: 2px solid #c6c6c6;">{{ sampana.id }}</td>
             </tr>
             <tr style="font-size:20px;">
-                <th>Anarana</th>
-                <td>{{ sampana.anarana }}</td>
+                <th style="border: 2px solid #c6c6c6;">Anarana</th>
+                <td style="border: 2px solid #c6c6c6;">{{ sampana.anarana }}</td>
             </tr>
         </tbody>
     </table>
@@ -23,4 +24,5 @@
     <a  class="btn btn-warning btn-lg btn-block" href="{{ path('sampana_edit', {'id': sampana.id }) }}" style="margin-bottom: 10px;">Anova</a>
 
     {{ include('sampana/_delete_form.html.twig') }}
+</body>
 {% endblock %}
