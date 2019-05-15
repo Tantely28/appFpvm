@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/templates/adidy/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/adidy/read.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FPVM/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FPVM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FPVM/app/src/main/java/com/fpvm/app/fpvm/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FPVM/app/src/main/java/com/fpvm/app/fpvm/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Mpiangona.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Mpiangona.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AdidyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AdidyRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mpiangona/read.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mpiangona/read.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vaovao/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vaovao/index.html.twig" afterDir="false" />
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+=======
+      <change afterPath="$PROJECT_DIR$/templates/adidy/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/adidy/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdidyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdidyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adidy/read.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adidy/read.html.twig" afterDir="false" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
+    </list>
+=======
+    <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="" />
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
     <list default="true" id="02ba8930-8e07-4bc9-9c48-51804520efd0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/api/MpikambanaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AdidyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AdidyRepository.php" afterDir="false" />
+>>>>>>> bcad8a9e4f0398b6dd0577e04e331281bec1b8be
     </list>
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +117,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Adidy.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="340">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/adidy/create.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="340">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+=======
+            <state relative-caret-position="85">
+              <caret line="5" column="163" selection-start-line="5" selection-start-column="163" selection-end-line="5" selection-end-column="163" />
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+=======
+            <state relative-caret-position="294">
+              <caret line="33" column="117" selection-start-line="33" selection-start-column="117" selection-end-line="33" selection-end-column="117" />
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+=======
             <state relative-caret-position="342">
               <caret line="36" column="17" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="17" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
             </state>
           </provider>
         </entry>
@@ -395,27 +456,95 @@
       <workItem from="1557465022104" duration="8386000" />
       <workItem from="1557479678873" duration="5496000" />
       <workItem from="1557487872975" duration="623000" />
+<<<<<<< HEAD
+      <workItem from="1557579932580" duration="744000" />
+=======
       <workItem from="1557495583906" duration="46000" />
       <workItem from="1557505701886" duration="1456000" />
       <workItem from="1557511344936" duration="1893000" />
       <workItem from="1557513437710" duration="9311000" />
       <workItem from="1557564387867" duration="3916000" />
       <workItem from="1557573187409" duration="4063000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+=======
+      <workItem from="1557578762693" duration="782000" />
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+      <workItem from="1557578762693" duration="1554000" />
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
+=======
       <workItem from="1557578762693" duration="1564000" />
       <workItem from="1557591005606" duration="796000" />
       <workItem from="1557727163101" duration="8172000" />
+<<<<<<< HEAD
+      <workItem from="1557814015253" duration="2144000" />
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+=======
       <workItem from="1557814015253" duration="4635000" />
+<<<<<<< HEAD
       <workItem from="1557821484773" duration="4365000" />
+=======
+      <workItem from="1557821484773" duration="3569000" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
+>>>>>>> bcad8a9e4f0398b6dd0577e04e331281bec1b8be
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="194905000" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="155432000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25945538" />
+=======
+    <option name="totallyTimeSpent" value="175373000" />
+=======
+    <option name="totallyTimeSpent" value="176155000" />
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+    <option name="totallyTimeSpent" value="176927000" />
+>>>>>>> ade586ff4575b675969cbfd21b4ea889a238e48e
+=======
+    <option name="totallyTimeSpent" value="188049000" />
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+=======
+    <option name="totallyTimeSpent" value="194109000" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
+>>>>>>> bcad8a9e4f0398b6dd0577e04e331281bec1b8be
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13615733" />
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229954" />
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
+>>>>>>> bcad8a9e4f0398b6dd0577e04e331281bec1b8be
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -428,7 +557,23 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32850242" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.26247987" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.2638037" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" weight="0.26247987" />
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.26247987" />
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" visible="true" weight="0.26247987" />
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
+>>>>>>> bcad8a9e4f0398b6dd0577e04e331281bec1b8be
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.29146537" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -599,6 +744,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/sampana/_delete_form.html.twig">
+=======
     <entry file="file://$PROJECT_DIR$/src/Repository/TemoignageRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
@@ -621,6 +769,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/VaovaoController.php">
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
@@ -634,6 +783,43 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Entity/Sampana.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="82" selection-start-line="82" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/sampana/new.html.twig">
+=======
+=======
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+    <entry file="file://$PROJECT_DIR$/templates/mpiangona/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Controller/MpiangonaController.php">
+>>>>>>> 84aefabbaa689bb716a0737fce5e3ab1594fdb4b
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="82" column="60" selection-start-line="79" selection-start-column="12" selection-end-line="82" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
+=======
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
     <entry file="file://$PROJECT_DIR$/templates/adidy/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -724,7 +910,49 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/sampana/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mpiangona/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mpiangona/read.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="97" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="97" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Controller/AdidyController.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/Entity/Mpiangona.php">
+>>>>>>> b58451fb0de24e2c9f6331d51a70f1cb329e4ffc
+=======
     <entry file="file://$PROJECT_DIR$/src/Controller/MpiangonaController.php">
+>>>>>>> 19dd0dbb302302551e19d0e04c7318371ba864c9
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
@@ -776,6 +1004,7 @@
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
+>>>>>>> fada7bd465b70a329b42c66a68d8adfd8a4d2b06
         </state>
       </provider>
     </entry>

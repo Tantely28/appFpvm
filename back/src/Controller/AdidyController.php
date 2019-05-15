@@ -42,7 +42,9 @@ class AdidyController extends AbstractController
             }
             ])
             ->add('datyNanefana',DateType::class)
-            ->add('volana',DateType::class)
+            ->add('volana',DateType::class,[
+                'label'=>'Volana naloha',
+            ])
             ->add('vola',TextType::class)
             ->getForm();
         $form->handleRequest($request);
@@ -95,7 +97,9 @@ class AdidyController extends AbstractController
                 }
             ])
             ->add('datyNanefana',DateType::class)
-            ->add('volana',DateType::class)
+            ->add('volana',DateType::class,[
+                'label'=>'Volana naloha',
+            ])
             ->add('vola',TextType::class)
             ->getForm();
         $form->handleRequest($request);
