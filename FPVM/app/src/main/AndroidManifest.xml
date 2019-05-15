@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".AdidyActivity"
-            android:label="@string/title_activity_adidy"
+            android:label="@string/title_activity_adidy_"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>

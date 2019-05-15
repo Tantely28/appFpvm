@@ -3,9 +3,6 @@ package com.fpvm.app.fpvm;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -20,10 +17,8 @@ import android.widget.ListView;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.fpvm.app.fpvm.listView.Adapter;
 import com.fpvm.app.fpvm.listView.AdapterAdidy;
 import com.fpvm.app.fpvm.listView.AppController;
-import com.fpvm.app.fpvm.listView.Item;
 import com.fpvm.app.fpvm.listView.ItemAdidy;
 
 import org.json.JSONArray;
@@ -36,19 +31,15 @@ import java.util.List;
 public class AdidyActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String url="http://192.168.43.102/adidy.php";
-    //http://192.168.88.234:8000/api/read/vaovao
+    private SessionManager sessionManager;
     private ProgressDialog dialog;
     private List<ItemAdidy> array= new ArrayList<ItemAdidy>();
     private ListView listView;
-
-    private SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adidy);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -60,7 +51,14 @@ public class AdidyActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+        //Récupération id session
+        sessionManager=new SessionManager(this);
+        String valSession = sessionManager.getId();
+        String url="http://192.168.88.24:8000/api/read/adidy/"+valSession;
+
+        //Creation varialbe adapter
         final AdapterAdidy adapter;
+
 
         listView = (ListView)findViewById(R.id.list_item_adidy);
         adapter = new AdapterAdidy(this,array);
@@ -68,8 +66,11 @@ public class AdidyActivity extends AppCompatActivity
 
         dialog=new ProgressDialog(this);
         dialog.setMessage("Loading...");
-        dialog.show();//Create volley request obj
-        JsonArrayRequest jsonArrayRequest= new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+        dialog.show();
+
+
+        //Create volley request obj
+        JsonArrayRequest jsonArrayRequest= new JsonArrayRequest(url.trim(), new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
 
@@ -81,11 +82,10 @@ public class AdidyActivity extends AppCompatActivity
                         JSONObject obj=response.getJSONObject(i);
                         ItemAdidy item=new ItemAdidy();
 
-                        item.setNom(obj.getString("nom"));
-                        item.setDate(obj.getString("date"));
-                        item.setMontant(obj.getString("montant"));
-
-                        //item.setYear(obj.getInt("releaseYear");
+                        item.setNom(obj.getString("mpiangona"));
+                        item.setDate(obj.getString("date_nanefana"));
+                        item.setVolana(obj.getString("volana"));
+                        item.setVola((obj.getString("vola")));
 
                         //add to array
                         array.add(item);
@@ -106,7 +106,6 @@ public class AdidyActivity extends AppCompatActivity
         });
         AppController.getInstance().addToRequestQueue(jsonArrayRequest);
 
-
     }
 
     @Override
@@ -122,7 +121,7 @@ public class AdidyActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.adidy, menu);
+        getMenuInflater().inflate(R.menu.navigation, menu);
         return true;
     }
 
@@ -148,22 +147,23 @@ public class AdidyActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_frag_vaovao) {
-            Intent e = new Intent(getApplicationContext(),NavigationActivity.class);
-            startActivity(e);
-            finish();
-        } else if (id == R.id.nav_frag_adidy) {
-            Intent e = new Intent(getApplicationContext(),AdidyActivity.class);
-            startActivity(e);
+            Intent i =new Intent(getApplicationContext(),NavigationActivity.class);
+            startActivity(i);
             finish();
 
-        } else if (id == R.id.nav_frag_toriteny) {
+        } else if (id == R.id.nav_frag_adidy) {
+            Intent i =new Intent(getApplicationContext(), AdidyActivity.class);
+            startActivity(i);
+            finish();
+
 
         } else if (id == R.id.nav_frag_fijoroana) {
+
+        } else if (id == R.id.nav_frag_toriteny) {
 
         } else if (id == R.id.nav_frag_user) {
 
         } else if (id == R.id.nav_frag_logout) {
-
             sessionManager.logout();
             Intent i =new Intent(getApplicationContext(),MainActivity.class);
             startActivity(i);

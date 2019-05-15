@@ -48,16 +48,14 @@ public class Adapter extends BaseAdapter {
             convertView=inflater.inflate(R.layout.custom_layout,null);
 
             TextView title= (TextView) convertView.findViewById(R.id.tv_title);
-            TextView rate= (TextView) convertView.findViewById(R.id.tv_news);
+            TextView contenu= (TextView) convertView.findViewById(R.id.tv_news);
 
             //getting data for row
             Item item=items.get(position);
             //title
             title.setText(item.getTitle());
             //rate
-            rate.setText(item.getNews());
-
-            //year.setText(String.valueof(item.getYear());
+            contenu.setText(item.getNews());
         }
 
         return convertView;

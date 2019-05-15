@@ -2,7 +2,10 @@ package com.fpvm.app.fpvm.listView;
 
 public class ItemAdidy {
 
-    public String nom,date,montant;
+    public String nom;
+    public String date;
+    public String volana;
+    public String vola;
 
     public String getNom() {
         return nom;
@@ -20,14 +23,19 @@ public class ItemAdidy {
         this.date = date;
     }
 
-    public String getMontant() {
-        return montant;
+    public String getVolana() {
+        return volana;
     }
 
-    public void setMontant(String montant) {
-        this.montant = montant;
+    public void setVolana(String volana) {
+        this.volana = volana;
     }
 
+    public String getVola() {
+        return vola;
+    }
 
-
+    public void setVola(String vola) {
+        this.vola = vola;
+    }
 }

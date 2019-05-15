@@ -11,9 +11,12 @@ import android.widget.TextView;
 
 import com.fpvm.app.fpvm.R;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
-public class AdapterAdidy extends BaseAdapter {
+
+public class AdapterAdidy extends BaseAdapter{
 
     private Activity activity;
     private LayoutInflater inflater;
@@ -49,20 +52,23 @@ public class AdapterAdidy extends BaseAdapter {
 
             TextView nom= (TextView) convertView.findViewById(R.id.txt_nom);
             TextView date= (TextView) convertView.findViewById(R.id.txt_date);
-            TextView montant= (TextView) convertView.findViewById(R.id.txt_montant);
+            TextView volana= (TextView) convertView.findViewById(R.id.txt_volana);
+            TextView vola= (TextView) convertView.findViewById(R.id.txt_vola);
 
             //getting data for row
             ItemAdidy item=items.get(position);
-            //nom
+            //title
             nom.setText(item.getNom());
-            //date
+            //rate
             date.setText(item.getDate());
             //montant
-            montant.setText(item.getMontant());
+            volana.setText(item.getVolana());
+            //vola
+            vola.setText(item.getVola());
 
-            //year.setText(String.valueof(item.getYear());
         }
 
         return convertView;
     }
+
 }

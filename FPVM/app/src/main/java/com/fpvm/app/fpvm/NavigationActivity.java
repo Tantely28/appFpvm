@@ -3,12 +3,6 @@ package com.fpvm.app.fpvm;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -17,10 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -38,14 +29,12 @@ import java.util.List;
 
 public class NavigationActivity extends AppCompatActivity
         implements
-        VaovaoFragment.OnFragmentInteractionListener,
-        AdidyFragment.OnFragmentInteractionListener,
         NavigationView.OnNavigationItemSelectedListener {
 
     private SessionManager sessionManager;
 
-    private static final String url="http://192.168.88.47:8000/api/read/vaovao";
-    //http://192.168.88.234:8000/api/read/vaovao
+    private static final String url="http://192.168.88.24:8000/api/read/vaovao";
+    //http://192.168.88.24:8000
     private ProgressDialog dialog;
     private List<Item> array= new ArrayList<Item>();
     private ListView listView;
@@ -124,6 +113,7 @@ public class NavigationActivity extends AppCompatActivity
             }
         });
         AppController.getInstance().addToRequestQueue(jsonArrayRequest);
+
     }
 
     @Override
@@ -161,25 +151,21 @@ public class NavigationActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
         // Handle navigation view item clicks here.
-
         int id = item.getItemId();
-
-        //Fragment fragment = null;
-
         if (id == R.id.nav_frag_vaovao) {
-            Intent e = new Intent(getApplicationContext(),NavigationActivity.class);
-            startActivity(e);
+            Intent i =new Intent(getApplicationContext(),NavigationActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_frag_adidy) {
-            Intent e = new Intent(getApplicationContext(),AdidyActivity.class);
-            startActivity(e);
-
+            Intent i =new Intent(getApplicationContext(), AdidyActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_frag_toriteny) {
-
+            //Activity toriteny
         } else if (id == R.id.nav_frag_fijoroana) {
-
+            //Activity fijorona
         } else if (id == R.id.nav_frag_user) {
-
+            //Activity user
         } else if (id == R.id.nav_frag_logout) {
             sessionManager.logout();
             Intent i =new Intent(getApplicationContext(),MainActivity.class);
@@ -187,28 +173,11 @@ public class NavigationActivity extends AppCompatActivity
             finish();
 
         }
-        //this.openFragement(fragment);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    @Override
-    public void onFragmentInteractionChangeTitle(String title) {
-        getSupportActionBar().setTitle(title);
-    }
-
-    //ouverture d'un fragment
-    /*private void openFragement(Fragment fragment){
-        if (fragment != null){
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.mainFrame, fragment);
-            ft.commit();
-        }
-    }*/
 
     public void hideDialog(){
         if(dialog !=null){
