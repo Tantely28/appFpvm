@@ -5,45 +5,53 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Toriteny
- *
- * @ORM\Table(name="toriteny")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\ToritenyRepository")
  */
 class Toriteny
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id_toriteny", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
      */
-    private $idToriteny;
+    private $id;
 
     /**
-     * @var string|null
-     *
-     * @ORM\Column(name="contenu", type="text", length=65535, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
-    private $contenu;
+    private $type;
 
-    public function getIdToriteny(): ?int
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $fiche;
+
+    public function getId(): ?int
     {
-        return $this->idToriteny;
+        return $this->id;
     }
 
-    public function getContenu(): ?string
+    public function getType(): ?string
     {
-        return $this->contenu;
+        return $this->type;
     }
 
-    public function setContenu(?string $contenu): self
+    public function setType(string $type): self
     {
-        $this->contenu = $contenu;
+        $this->type = $type;
 
         return $this;
     }
 
+    public function getFiche(): ?string
+    {
+        return $this->fiche;
+    }
 
+    public function setFiche(string $fiche): self
+    {
+        $this->fiche = $fiche;
+
+        return $this;
+    }
 }
