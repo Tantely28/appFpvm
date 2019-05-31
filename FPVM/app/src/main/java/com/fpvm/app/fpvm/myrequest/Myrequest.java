@@ -33,7 +33,7 @@ public class Myrequest {
 
     public void register(final String pseudo, final String email, final String password, final String password2, final RegisterCallback callback)
     {
-        String url="http://192.168.43.157/register.php";
+        String url="http://192.168.191.1:8000/register.php";
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -89,7 +89,7 @@ public class Myrequest {
     }
 
     public void connection(final String pseudo, final String password, final LoginCallback loginCallback){
-        String url="http://192.168.43.102:8000/api/login/mpiangona";
+        String url="http://192.168.191.1:8000/api/login/mpiangona";
 
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

@@ -54,7 +54,7 @@ public class AdidyActivity extends AppCompatActivity
         //Récupération id session
         sessionManager=new SessionManager(this);
         String valSession = sessionManager.getId();
-        String url="http://192.168.88.24:8000/api/read/adidy/"+valSession;
+        String url="http://192.168.191.1:8000/api/read/adidy/"+valSession;
 
         //Creation varialbe adapter
         final AdapterAdidy adapter;
